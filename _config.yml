@@ -1,4 +1,4 @@
-permalink: :title/
+permalink: /posts/:title
 kramdown:
   hard_wrap: true
 timezone: GMT
