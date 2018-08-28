@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dump!</title>
+    <meta name="description" content="micropub">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="authorization_endpoint" href="https://github-indieauth.herokuapp.com/auth">
+    <link rel="token_endpoint" href="https://github-indieauth.herokuapp.com/token">
+    <link rel="micropub" href="https://muan-micropub-content.glitch.me/micropub">
+    <style>
+    body,
+button,
+textarea,
+input {
+  font-family: monospace;
+}
+
+body {
+  font-size: 14px;
+  margin: 0;
+  padding: 2em;
+}
+
+a {
+  color: #2023de;
+}
+
+footer,
+header {
+  margin: 1em 0;
+}
+
+footer,
+header,
+main {
+  width: 100%;
+  max-width: 36em;
+}
+
+label {
+  display: block;
+}
+
+textarea,
+input {
+  margin: 0.4em 0;
+  width: 100%;
+}
+
+button {
+  padding: 0.4em;
+}
+    </style>
+  </head>
+  <body>
+    {{content}}
+  </body>
+</html>

@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Dump!</title>
-    <meta name="description" content="micropub">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="authorization_endpoint" href="https://github-indieauth.herokuapp.com/auth">
-    <link rel="token_endpoint" href="https://github-indieauth.herokuapp.com/token">
-    <link rel="micropub" href="https://muan-micropub-content.glitch.me/micropub">
-  </head>
-  <body>
-    Dump things here.
-  </body>
-</html>
+---
+layout: default
+---
+
+Dump things here.
+<ul>
+  {% for post in site.posts %}
+    <li><a href="{{post.url}}">{{post.title}}</a></li>
+  {% endfor %}
+</ul>
