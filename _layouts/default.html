@@ -10,58 +10,62 @@
     <link rel="token_endpoint" href="https://github-indieauth.herokuapp.com/token">
     <link rel="micropub" href="https://muan-micropub-content.glitch.me/micropub">
     <style>
-    body,
-button,
-textarea,
-input {
-  font-family: 'Andale Mono', monospace;
-}
+      body,
+      button,
+      textarea,
+      input {
+        font-family: 'Andale Mono', monospace;
+      }
 
-body {
-  font-size: 14px;
-  margin: 0;
-  padding: 2em;
-  line-height: 1.7;
-}
+      body {
+        font-size: 14px;
+        margin: 0;
+        padding: 2em;
+        line-height: 1.7;
+      }
 
-a {
-  color: #2023de;
-  text-decoration: none;
-}
+      a {
+        color: #2023de;
+        text-decoration: none;
+      }
 
-a:hover {
-  text-decoration: underline;
-}
+      a:hover {
+        text-decoration: underline;
+      }
 
-footer,
-header {
-  margin: 1em 0;
-}
+      footer,
+      header {
+        margin: 1em 0;
+      }
 
-footer,
-header,
-main {
-  width: 100%;
-  max-width: 36em;
-}
+      footer,
+      header,
+      main {
+        width: 100%;
+        max-width: 36em;
+      }
 
-label {
-  display: block;
-}
+      label {
+        display: block;
+      }
 
-textarea,
-input {
-  margin: 0.4em 0;
-  width: 100%;
-}
+      textarea,
+      input {
+        margin: 0.4em 0;
+        width: 100%;
+      }
 
-button {
-  padding: 0.4em;
-}
+      button {
+        padding: 0.4em;
+      }
 
-img {
-  max-width: 100%;
-}
+      img {
+        max-width: 100%;
+      }
+
+      hr {
+        margin: 1.5em 0;
+      }
     </style>
   </head>
   <body>
@@ -69,7 +73,24 @@ img {
       {% if page.title %}<h1>{{page.title}}</h1>{% endif %}
       {% if page.date %}<time>{{page.date}}</time>{% endif %}
     </header>
-    <main>{{content}}</main>
-    <footer><a href="https://muan.github.io/micropub-content">/home</a> <a href="https://github.com/muan/micropub-content">/source</a></footer>
+    <main>
+      {{content}}
+      {% if page.previous.url or page.next.url %}
+        <hr>
+        <div>
+          Prev:
+          {% if page.previous.url %}<a href="..{{page.previous.url}}">{{page.previous.title}}</a>{% else %}--{% endif %}
+        </div>
+        <div>
+          Next:
+          {% if page.next.url %}<a href="..{{page.next.url}}">{{page.next.title}}</a>{% else %}--{% endif %}
+        </div>
+      {% endif %}
+    </main>
+    <footer>
+      <a href="https://muan.github.io/micropub-content">/home</a>
+      <a href="https://github.com/muan/micropub-content">/source</a>
+      <a href="https://muan-micropub-client.glitch.me/">/client</a>
+    </footer>
   </body>
 </html>

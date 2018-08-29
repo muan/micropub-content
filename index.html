@@ -1,9 +1,12 @@
 ---
-title: dump
+title: Dump
 layout: default
 ---
 
-Dump things here.
+<p>
+  Dump things here.
+</p>
+<h2>Posts</h2>
 <ul>
   {% for post in site.posts %}
     <li><a href=".{{post.url}}">{{post.title}}</a> &mdash; <time>{{post.date | date_to_string}}</time></li>
