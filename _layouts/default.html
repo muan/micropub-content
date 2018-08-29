@@ -26,6 +26,11 @@ body {
 
 a {
   color: #2023de;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 footer,
@@ -53,6 +58,10 @@ input {
 button {
   padding: 0.4em;
 }
+
+img {
+  max-width: 100%;
+}
     </style>
   </head>
   <body>
@@ -61,6 +70,6 @@ button {
       {% if page.date %}<time>{{page.date}}</time>{% endif %}
     </header>
     <main>{{content}}</main>
-    <footer><a href="https://muan.github.io/micropub-content">/home</a> <a href="https://github.com/muan/micropub-content">(source)</a></footer>
+    <footer><a href="https://muan.github.io/micropub-content">/home</a> <a href="https://github.com/muan/micropub-content">/source</a></footer>
   </body>
 </html>
