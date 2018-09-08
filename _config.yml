@@ -2,3 +2,5 @@ permalink: /posts/:title
 kramdown:
   hard_wrap: true
 timezone: GMT
+title: Micropub Content
+url: https://muan.github.io/micropub-content
