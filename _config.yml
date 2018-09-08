@@ -1,6 +1,8 @@
+title: Micropub Content
+url: https://muan.github.io/micropub-content
+micropub_endpoint: https://muan-micropub-content.glitch.me/micropub
+
+timezone: GMT
 permalink: /posts/:title
 kramdown:
   hard_wrap: true
-timezone: GMT
-title: Micropub Content
-url: https://muan.github.io/micropub-content
