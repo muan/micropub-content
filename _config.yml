@@ -1,6 +1,6 @@
 title: Micropub Content
 url: https://muan.github.io/micropub-content
-micropub_endpoint: https://muan-micropub-content.glitch.me/micropub
+micropub_endpoint: https://micropub-endpoint-demo.herokuapp.com/micropub
 
 timezone: GMT
 permalink: /posts/:title
